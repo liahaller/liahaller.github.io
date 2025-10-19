@@ -1,0 +1,254 @@
+/* === Importa Concert One e Montserrat === */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+
+/* === Paleta e tipografia === */
+:root{
+  --purple-1: #913D88;
+  --purple-2: #703D91;
+  --cyan:     #08bbdb;
+  --red-1:    #E32231;
+  --red-2:    #BB1824;
+  --bg:       #ffffff;
+  --card-bg:  #efedf0;
+  --muted:    #6b6b6b;
+  --border:   #e6e6e9;
+  --shadow:   rgba(11,12,16,0.06);
+  --radius:   1rem;
+  --gap:      1rem;
+  --max-width:46rem;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  color-scheme: light;
+}
+
+/* === Base === */
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; }
+body{
+  background: var(--bg);
+  color: #0b1220;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height: 1.35;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Header ===== */
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 0.125rem solid #000;
+  background: transparent;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap: 0.75rem;
+  margin:0;
+  font-weight:800;
+  font-size: 1.25rem;
+  color: var(--purple-2);
+  letter-spacing: -0.02em;
+}
+.logo-img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  object-fit:contain;
+  background-color: #fff;
+  padding: 0.1rem;
+}
+.brand strong { display:block; font-weight:900; font-size:1.35rem; color:var(--purple-1); }
+.profile-link { display:inline-flex; align-items:center; justify-content:center; }
+.profile-img{ width: 3rem; height: 3rem; border-radius: 50%; object-fit:cover; }
+
+/* ===== Search ===== */
+.search{
+  display:flex;
+  gap: 0.5rem;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  max-width: var(--max-width);
+  margin: 0.5rem auto;
+  padding: 0.5rem 0;
+}
+.search-input{
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 30rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 2rem;
+  border: none;
+  background: rgba(112,61,145,0.08);
+  color: #222;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0.25rem 0.5rem var(--shadow);
+}
+.search-input:focus{
+  box-shadow: 0 0.35rem 0.9rem rgba(8,187,219,0.12);
+  border: 0.0625rem solid rgba(8,187,219,0.16);
+}
+.filter-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 0.45rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.0625rem solid var(--border);
+  cursor: pointer;
+}
+.icon-filter{ width: 1.75rem; height: 1.75rem; display:block; }
+
+/* ===== Main / Events ===== */
+main{
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.section-title{
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--purple-2);
+}
+
+/* Lista de cards */
+.event-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: calc(var(--gap) * 0.9);
+  grid-template-columns: 1fr;
+}
+
+/* ===== Card ===== */
+.event-card{
+  display:flex;
+  flex-direction:column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(11,12,16,0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.event-card:hover{
+  transform: translateY(-0.35rem);
+  box-shadow: 0 1rem 2rem rgba(11,12,16,0.09);
+}
+
+/* Layout do conteúdo do card: duas linhas, cada uma com 2 blocos (esquerda e direita) */
+.event-card > div{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+/* ==== Layout dos cards usando CSS Grid (substituir as regras antigas de .event-card e meta) ==== */
+
+.event-card{
+  display: grid;
+  grid-template-columns: 1fr auto;   /* coluna esquerda expansível + coluna direita auto */
+  grid-template-rows: auto auto;     /* duas "linhas": título/preço e bairro/estrelas */
+  gap: 0.5rem 1rem;                  /* row-gap column-gap */
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(11,12,16,0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  align-items: center;               /* alinha verticalmente o conteúdo das células */
+}
+
+/* áreas explícitas (funciona sem alterar HTML) */
+.event-name   { grid-column: 1 / 2; grid-row: 1 / 2; }
+.price        { grid-column: 2 / 3; grid-row: 1 / 2; justify-self: end; }
+.location     { grid-column: 1 / 2; grid-row: 2 / 3; }
+.rating       { grid-column: 2 / 3; grid-row: 2 / 3; justify-self: end; }
+
+/* ajustes tipográficos / espaçamentos */
+.event-name, .price, .rating, .location {
+  margin: 0;       /* remove margins inesperadas */
+  line-height: 1.05;
+}
+
+/* reforça alinhamento à direita para os itens da coluna direita */
+.price, .rating {
+  text-align: right;
+  color: #111827;
+  font-weight: 700;
+}
+
+/* mantém a cor e estilo dos títulos */
+.event-name {
+  color: var(--purple-1);
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+/* espaçamento visual entre linhas, se quiser um pouco mais de "respiro" */
+@media (max-width: 36rem){
+  .event-card{
+    grid-template-columns: 1fr auto;
+    gap: 0.4rem 0.75rem;
+    align-items: start;
+  }
+}
+
+/* ===== Footer ===== */
+.site-footer{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  border-top: 0.125rem solid #000;
+}
+.footer-nav ul{
+  list-style:none;
+  display:flex;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+  justify-content:center;
+  align-items:center;
+}
+.footer-nav img{
+  width: 2.25rem;
+  height: 2.25rem;
+  display:block;
+}
+
+/* ===== Responsividade ===== */
+@media (min-width: 46rem){
+  .event-list{ grid-template-columns: repeat(2, 1fr); }
+  header{ padding: 1rem 0; }
+  .logo-img, .profile-img { width: 3.75rem; height: 3.75rem; }
+}
+@media (max-width: 22rem){
+  .footer-nav img { width: 1.9rem; height: 1.9rem; }
+  .logo-img, .profile-img { width: 2.5rem; height: 2.5rem; }
+}
+
+/* ===== utilitários ===== */
+a { color: inherit; text-decoration: none; }
+button { background: none; border: none; font: inherit; cursor: pointer; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ===== Fontes ===== */
+h1, h3 {
+  font-family: "Concert One", cursive;
+}

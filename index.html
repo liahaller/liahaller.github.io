@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Best vibe</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Best vibe</title>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1 style="display: flex; align-items: center; justify-content: flex-start;">
-            <img src="img/logo.png" alt="Logo Best Vibe" width="50" height="50" style="margin-right: 10px;">
-            Best vibe
+        <h1 class="logo">
+            <img src="img/logo.png" alt="Logo Best Vibe" class="logo-img">
+            <span class="brand">Best vibe</span>
         </h1>
-        <a href="perfil.html"><img src="img/icone_perfil.png" alt="Perfil" width="50" height="50"></a>
+
+        <a href="perfil.html" class="profile-link">
+            <img src="img/icone_perfil.png" alt="Perfil" class="profile-img">
+        </a>
     </header>
+
+    <!-- Campo de busca -->
+    <section class="search">
+      <input type="search" class="search-input" placeholder="Find your vibe...">
+      <button type="button" class="filter-button">
+        <img src="img/icone_filtro.png" alt="Filtrar" class="icon-filter">
+      </button>
+    </section> 
+
+    <!-- Lista de eventos -->
     <main>
-        <h2>Find your vibe</h2>
-        <a href="filtro.html"><img src="img/icone_filtro.png" alt="Filtro" width="50" height="50"></a>
-        <ul>
+        <h2 class="section-title">Eventos</h2>
+
+        <ul class="event-list">
             <li>
-                Vila JK
-                <ul>
-                    <li>100R$-500$</li>
-                    <li>Avaliação: ★★★★☆</li>
-                    <li>Vila Olímpia</li>
-                </ul>
+                <article class="event-card">
+                    <h3 class="event-name">
+                        Villa JK
+                    </h3>
+                    <p class="price">100R$ - 500$</p>
+                    <p class="rating">★★★★☆</p>
+                    <p class="location">Vila Olímpia</p>
+                </article>
             </li>
             <li>
-                <a href="detalhes_da_festa_universitaria.html">Festa universitária</a>
-                <ul>
-                    <li>100R$-300$</li>
-                    <li>Avaliação: ★★★★★</li>
-                    <li>Barra Funda</li>
-                </ul>
+                <a href="detalhes_da_festa_universitaria.html">
+                <article class="event-card">
+                    <h3 class="event-name">Festa Universitária</h3>
+                    <p class="price">100R$ - 300$</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="location">Barra Funda</p>
+                </article>
+                </a>
             </li>
             <li>
-                Rock no centro
-                <ul>
-                    <li>20R$-150$</li>
-                    <li>Avaliação: ★★★☆☆</li>
-                    <li>Centro</li>
-                </ul>
+                <article class="event-card">
+                    <h3 class="event-name">
+                        Rock no Centro
+                    </h3>
+                    <p class="price">20R$ - 150$</p>
+                    <p class="rating">★★★☆☆</p>
+                    <p class="location">Centro</p>
+                </article>
             </li>
         </ul>
     </main>
-    <footer>
-        <figure>
-            <img src="img/icone_mapa.png" alt="Mapa" width="50" height="50">
-            <img src="img/icone_home.png" alt="Home" width="50" height="50">
-            <img src="img/icone_chat.png" alt="Chat" width="50" height="50">
-            <img src="img/icone_calendario.png" alt="Calendário" width="50" height="50">
-        </figure>
+    
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#"><img src="img/icone_mapa.png" alt="Mapa"></a></li>
+                <li><a href="#"><img src="img/icone_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icone_chat.png" alt="Chat"></a></li>
+                <li><a href="#"><img src="img/icone_calendario.png" alt="Calendário"></a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

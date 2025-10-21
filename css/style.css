@@ -265,7 +265,10 @@ h1, h2, h3, h4, h5, h6 {
 .profile-link.small { display:inline-flex; align-items:center; justify-content:center; }
 .profile-img{ width: 3.25rem; height: 3.25rem; border-radius: 50%; object-fit:cover; }
 
-.detail-main { padding-top: 1.25rem; padding-bottom: 2rem; }
+.detail-main {
+  padding-top: 1.25rem; 
+  padding-bottom: 2rem; 
+}
 
 .detail-hero{
   display: grid;

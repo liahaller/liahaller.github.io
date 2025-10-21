@@ -541,7 +541,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
   background: var(--avaliar);
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(11,12,16,0.06);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06);
   transition: transform 160ms ease, box-shadow 160ms ease;
   font-weight: bold;
+}
+
+.avaliar:hover{
+  transform: translateY(-0.35rem);
+  box-shadow: 0 1rem 2rem rgba(11,12,16,0.09);
 }

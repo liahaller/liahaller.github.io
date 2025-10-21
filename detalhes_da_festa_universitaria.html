@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>Detalhes da festa</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Detalhes da Festa - Best Vibe</title>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Best Vibe</a></h1>
-        <h2>Detalhes da festa</h2>
+    <!-- Cabeçalho -->
+    <header class="details-header">
+        <h1 class="brand"><a href="index.html">Best Vibe</a></h1>
+        <h2 class="page-title">Detalhes</h2>
+        <a href="perfil.html" class="profile-link small">
+            <img src="img/icone_perfil.png" alt="Perfil" class="profile-img">
+        </a>
     </header>
-    <main>
-        <h2>
-            <img src="img/icone_chapeu.png" alt="Chapeu de formatura" width="30" height="30">
-            Festa universitária
-        </h2>
-        <ul>
-            <li>Data: 15/12/2025</li>
-            <li>Horário: 20:00 - 03:00</li>
-            <li>Local: Galpão da vila madalena, São Paulo
-                <img src="img/imagem_mapa.jpeg" alt="Mapa centro" width="100" height="100">
+
+    <!-- Conteúdo principal -->
+    <main class="detail-main">
+        <section class="detail-hero">
+            <h2 class="event-name">
+                <img src="img/icone_chapeu.png" alt="Chapéu" width="30" height="30" style="vertical-align:middle;">
+                Festa Universitária
+            </h2>
+
+            <section class="meta-row">
+                <p class="price">100R$ - 300R$</p>
+                <p class="rating">★★★★☆</p>
+            </section>
+        </section>
+
+        <ul class="detail-info">
+            <li><strong>Data:</strong> 15/12/2025</li>
+            <li><strong>Horário:</strong> 20:00 - 03:00</li>
+            <li><strong>Local:</strong> Galpão da Vila Madalena, São Paulo</li>
+            <li class="map-box">
+                <img src="img/imagem_mapa.jpeg" alt="Mapa centro" class="map-img">
             </li>
-            <li>Preço: 100R$-300R$</li>
-            <li>Avaliação: ★★★★☆</li>
-            <li>Descrição: Comemore o final de ano com a tropa completa</li>
+            <li><strong>Descrição:</strong> Comemore o final de ano com a tropa completa</li>
         </ul>
-        <h3>Reviews</h3>
-        <ul>
-            <li>
-                <a href="mariana_perfil.html">Mariana S</a>
-                <ul>
-                    <li>★★★★★</li>
-                    <li>A festa do ano passado estava incrível!</li>
-                </ul>
-            </li>
-        </ul>
+
+        <section class="botao-section">
+            <button class="cta-btn">Ingressos</button>
+        </section>
+
+        <section class="reviews">
+            <h3>Avaliações</h3>
+            <ul>
+                <li>
+                    <a href="mariana_perfil.html">Mariana S</a>
+                    <p class="review-meta">★★★★★</p>
+                    <p>“A festa do ano passado estava incrível!”</p>
+                </li>
+            </ul>
+        </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#"><img src="img/icone_mapa.png" alt="Mapa"></a></li>
+                <li><a href="index.html"><img src="img/icone_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icone_chat.png" alt="Chat"></a></li>
+                <li><a href="#"><img src="img/icone_calendario.png" alt="Calendário"></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
+

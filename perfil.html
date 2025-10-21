@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Best Vibe</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-    <h1>
-        Perfil
-    </h1>
-    <img src="img/icone_perfil.png" alt="Perfil" width="50" height="50">
-    </header>
-    <main>
-        <ul>
-            <li>
-                Dados pessoais
-            </li>
-            <li>
-                <a href="meus_eventos.html">
-                    Meus eventos
-                </a>  
-            </li> 
-            <li>
-                Lista de desejos
-            </li>
-            <li>
-                Configurações
-            </li>
-            <li><a href="login.html">Sair</a></li>
-        </ul>
-    </main>
+  <!-- Cabeçalho -->
+  <header class="details-header">
+    <h1 class="page-title">Perfil</h1>
+    <a href="perfil.html" class="profile-link small">
+      <img src="img/icone_perfil.png" alt="Perfil" class="profile-img">
+    </a>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="detail-main">
+    <section class="detail-hero" style="text-align: center;">
+      <img src="img/icone_perfil.png" alt="Avatar" width="80" height="80" class="profile-img" style="border: 2px solid #000; border-radius: 50%; padding: 10px;">
+      <h3 style="margin-top: 10px;">Edite seu avatar</h3>
+    </section>
+
+    <ul class="opcoes-perfil">
+        <li>
+            <button class="cta-btn" style="background-color: #e6e6e6; color: #000; box-shadow: 2px 3px 5px rgba(0,0,0,0.1);">Dados Pessoais</button>
+        </li>
+        <li>
+            <button class="cta-btn" style="background-color: #e6e6e6; color: #000; box-shadow: 2px 3px 5px rgba(0,0,0,0.1);">Meus Eventos</button>
+        </li>
+        <li>
+            <button class="cta-btn" style="background-color: #e6e6e6; color: #000; box-shadow: 2px 3px 5px rgba(0,0,0,0.1);">Lista de Desejos</button>
+        </li>
+        <li>
+            <button class="cta-btn" style="background-color: #e6e6e6; color: #000; box-shadow: 2px 3px 5px rgba(0,0,0,0.1);">Configurações</button>
+        </li>
+    </ul>
+  </main>
 </body>
 </html>
+
 

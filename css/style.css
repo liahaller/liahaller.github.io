@@ -58,7 +58,7 @@ header{
   gap: 0.75rem;
   margin:0;
   font-weight:800;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--purple-2);
   letter-spacing: -0.02em;
 }
@@ -252,3 +252,17 @@ img { max-width: 100%; height: auto; display: block; }
 h1, h3 {
   font-family: "Concert One", cursive;
 }
+/* 
+.detalhes-evento-titulo{
+  display:flex;
+  flex-direction:column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.festa-universitaria {
+  color: var(--purple-1);
+  font-size: 1.5rem;
+  font-weight: 800;
+} */

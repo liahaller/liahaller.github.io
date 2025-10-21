@@ -3,19 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalhe do Review</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Best vibe</a></h1>
-    </header>
-    <h2>Review de Mariana</h2>
-    <p>Nota: ★★★★☆</p>
-    <ul>
-        <li>Música: ★★★★☆</li>
-        <li>Organização: ★★★☆☆</li>
-        <li>Preço: ★★★★★</li>
-        <li>Local: ★★★★☆</li>
-    </ul>
-    <p>Comentário: Festa tava boa, mas tinha muita fila no bar.</p>
+  <header class="review-header">
+    <h1>Detalhes</h1>
+    <a href="perfil.html">
+      <img src="img/icone_perfil.png" alt="Perfil">
+    </a>
+  </header>
+
+  <main class="review-main">
+    <h2 class="review-title">Review Rock no Centro:</h2>
+
+    <section class="review-profile">
+      <img src="img/icone_perfil.png" alt="Mariana">
+      <strong>Mariana</strong>
+      <p class="review-stars">★★★☆☆</p>
+    </section>
+
+    <section class="review-section">
+      <h3>Avaliação:</h3>
+      <ul class="review-ratings">
+        <li><span>Música:</span> <span>★★★★★</span></li>
+        <li><span>Preço:</span> <span>★★☆☆☆</span></li>
+        <li><span>Organização:</span> <span>★★☆☆☆</span></li>
+        <li><span>Local:</span> <span>★★☆☆☆</span></li>
+      </ul>
+    </section>
+
+    <section class="review-comment">
+      <h3>Comentário:</h3>
+      <div class="comment-box">
+        Muita fila no bar, e para entrar na festa! A organização poderia ser melhor para entrar, 
+        de resto estava bem organizado.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#"><img src="img/icone_mapa.png" alt="Mapa"></a></li>
+        <li><a href="index.html"><img src="img/icone_home.png" alt="Home"></a></li>
+        <li><a href="#"><img src="img/icone_chat.png" alt="Chat"></a></li>
+        <li><a href="#"><img src="img/icone_calendario.png" alt="Calendário"></a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>

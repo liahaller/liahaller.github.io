@@ -25,10 +25,51 @@
     <!-- Campo de busca -->
     <section class="search">
       <input type="search" class="search-input" placeholder="Find your vibe...">
-      <a href="filtro.html" class="filter-button">
+      <a href="#filter-panel" class="filter-button">
         <img src="img/icone_filtro.png" alt="Filtrar" class="icon-filter">
       </a>
     </section> 
+
+    <!-- Painel do filtro -->
+    <aside id="filter-panel" class="filter-overlay">
+    <header class="filter-header">
+        <h3>Filtros</h3>
+        <a class="filter-close" href="#">✕</a>
+    </header>
+
+    <form class="filter-form" action="#" method="get">
+        <ul class="filter-list">
+        <li>
+            <label class="filter-item">
+            <input type="checkbox" name="f_preco" value="preco" />
+            <span class="filter-label">Preço</span>
+            </label>
+        </li>
+        <li>
+            <label class="filter-item">
+            <input type="checkbox" name="f_proximidade" value="proximidade" />
+            <span class="filter-label">Proximidade</span>
+            </label>
+        </li>
+        <li>
+            <label class="filter-item">
+            <input type="checkbox" name="f_avaliacao" value="avaliacao" />
+            <span class="filter-label">Avaliação</span>
+            </label>
+        </li>
+        <li>
+            <label class="filter-item">
+            <input type="checkbox" name="f_musica" value="musica" />
+            <span class="filter-label">Música</span>
+            </label>
+        </li>
+        </ul>
+
+        <footer class="filter-actions">
+        <button type="submit" class="confirm-btn">Confirmar</button>
+        </footer>
+    </form>
+    </aside>
 
     <!-- Lista de eventos -->
     <main>

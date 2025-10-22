@@ -590,3 +590,77 @@ h1, h2, h3, h4, h5, h6 {
   color: red;
   font-weight: bold;
 }
+
+/* ===== painel de filtros simples (abaixo da busca) ===== */
+/* ===== painel de filtros simples (abaixo da busca) ===== */
+
+/* Oculto por padrão */
+/* ===== painel de filtros simples (abaixo da busca, largura limitada) ===== */
+
+#filter-panel {
+  display: none;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: var(--max-width); /* mantém o mesmo limite da página */
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+/* aparece quando clicado */
+#filter-panel:target {
+  display: block;
+}
+
+/* Cabeçalho */
+.filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.filter-header h3 {
+  margin: 0;
+  font-family: "Concert One", sans-serif;
+  font-size: 1.1rem;
+}
+.filter-close {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+/* Lista horizontal de filtros */
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.filter-label {
+  font-size: 0.95rem;
+}
+
+/* Botão confirmar */
+.filter-actions {
+  text-align: right;
+}
+.confirm-btn {
+  background: var(--purple-1);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.confirm-btn:hover {
+  background: var(--purple-2);
+}

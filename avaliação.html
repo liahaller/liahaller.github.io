@@ -3,37 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">  
         <title>Avaliação</title>
     </head>
     <body>
-        <header>
-            <h1>
-                Avalie o evento
-            </h1>
+        <header class="details-header">
+            <h1 class="page-title">Avalie: Samba na Lapa</h1>
+            <a href="perfil.html" class="profile-link small">
+                <img src="img/icone_perfil.png" alt="Perfil" class="profile-img">
+            </a>
         </header>
         <main>
-            <h2>
-                Rock no Centro ★★★★★
-            </h2>
-            <p>
-                <img src="img/icone_perfil.png" alt="Perfil" width="50" height="50"> Rafaela S.
-            </p>
-            <p>
-                Festa muito boa! Musica legal e pessoal animado!
-            </p>
-            <p>
-                <a href="enviar_avaliação.html">
-                    Enviar Avaliação
-                </a>  
-            </p>
-        </main>
-        <footer>
-                <figure>
-                    <img src="img/icone_mapa.png" alt="Mapa" width="50" height="50">
-                    <img src="img/icone_home.png" alt="Home" width="50" height="50">
-                    <img src="img/icone_chat.png" alt="Chat" width="50" height="50">
-                    <img src="img/icone_calendario.png" alt="Calendario" width="50" height="50">
-                </figure>
+            <ul class="caixa-avaliacao" >
+                <li>
+                    <ul class="horizontal">
+                        <li>
+                            Avalie sua experiência:
+                        </li>
+                        <li class="estrela-vazia">
+                            ★★★★★
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Destaque o ponto auge do evento:
+                    <input class="avaliar-input" placeholder='Deixe seu comentário aqui...'>
+                </li>
+                <li>
+                    Destaque o que poderia melhorar:
+                    <input class="avaliar-input" placeholder='Deixe seu comentário aqui...'>
+                </li>
+                <li>
+                    Você recomendaria este evento para um amigo?
+                    <ul class="horizontal">
+                        <li class="avaliar">
+                            <p class="sim">
+                                Sim
+                            </p>
+                        </li>
+                        <li class="avaliar">
+                            <p class="nao">
+                                Não
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nao">
+                    Se não, por quê?
+                    <input class="avaliar-input" placeholder='Deixe seu comentário aqui...'>
+                </li>
+            </ul> 
+         </main>
+        <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#"><img src="img/icone_mapa.png" alt="Mapa"></a></li>
+                <li><a href="index.html"><img src="img/icone_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icone_chat.png" alt="Chat"></a></li>
+                <li><a href="#"><img src="img/icone_calendario.png" alt="Calendário"></a></li>
+            </ul>
+        </nav>
         </footer>
     </body>
 </html>

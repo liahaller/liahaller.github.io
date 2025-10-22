@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6 {
 #filter-panel {
   display: none;
   background: var(--card-bg);
-  border: 1px solid var(--border);
+  border: 1rem solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
   margin: 1rem auto;

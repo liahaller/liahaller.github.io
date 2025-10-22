@@ -1,124 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Best vibe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Best vibe</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <a href="index.html">
-            <h1 class="logo">
-                <img src="img/logo.png" alt="Logo Best Vibe" class="logo-img">
-                <span class="brand">Best vibe</span>
-            </h1>
-        </a>
+  <!-- Cabeçalho -->
+  <header>
+    <a href="index.html">
+      <h1 class="logo">
+        <img src="img/logo.png" alt="Logo Best Vibe" class="logo-img">
+        <span class="brand">Best vibe</span>
+      </h1>
+    </a>
 
-        <a href="perfil.html" class="profile-link">
-            <img src="img/icone_perfil.png" alt="Perfil" class="profile-img">
-        </a>
-    </header>
+    <a href="perfil.html" class="profile-link">
+      <img src="img/icone_perfil.png" alt="Perfil" class="profile-img">
+    </a>
+  </header>
 
-    <!-- Campo de busca -->
-    <section class="search">
-      <input type="search" class="search-input" placeholder="Find your vibe...">
-      <a href="#filter-panel" class="filter-button">
-        <img src="img/icone_filtro.png" alt="Filtrar" class="icon-filter">
-      </a>
-    </section> 
+  <!-- Campo de busca -->
+  <section class="search">
+    <h2 class="visually-hidden">Buscar eventos</h2>
+    <input type="search" class="search-input" placeholder="Find your vibe...">
+    <a href="#filter-panel" class="filter-button">
+      <img src="img/icone_filtro.png" alt="Filtrar" class="icon-filter">
+    </a>
+  </section>
 
-    <!-- Painel do filtro -->
-    <aside id="filter-panel" class="filter-overlay">
+  <!-- Painel do filtro -->
+  <aside id="filter-panel" class="filter-overlay">
     <header class="filter-header">
-        <h3>Filtros</h3>
-        <a class="filter-close" href="#">✕</a>
+      <h3>Filtros</h3>
+      <a class="filter-close" href="#">✕</a>
     </header>
 
     <form class="filter-form" action="#" method="get">
-        <ul class="filter-list">
+      <ul class="filter-list">
         <li>
-            <label class="filter-item">
-            <input type="checkbox" name="f_preco" value="preco" />
+          <label class="filter-item">
+            <input type="checkbox" name="f_preco" value="preco">
             <span class="filter-label">Preço</span>
-            </label>
+          </label>
         </li>
         <li>
-            <label class="filter-item">
-            <input type="checkbox" name="f_proximidade" value="proximidade" />
+          <label class="filter-item">
+            <input type="checkbox" name="f_proximidade" value="proximidade">
             <span class="filter-label">Proximidade</span>
-            </label>
+          </label>
         </li>
         <li>
-            <label class="filter-item">
-            <input type="checkbox" name="f_avaliacao" value="avaliacao" />
+          <label class="filter-item">
+            <input type="checkbox" name="f_avaliacao" value="avaliacao">
             <span class="filter-label">Avaliação</span>
-            </label>
+          </label>
         </li>
         <li>
-            <label class="filter-item">
-            <input type="checkbox" name="f_musica" value="musica" />
+          <label class="filter-item">
+            <input type="checkbox" name="f_musica" value="musica">
             <span class="filter-label">Música</span>
-            </label>
+          </label>
         </li>
-        </ul>
+      </ul>
 
-        <footer class="filter-actions">
+      <footer class="filter-actions">
         <button type="submit" class="confirm-btn">Confirmar</button>
-        </footer>
+      </footer>
     </form>
-    </aside>
+  </aside>
 
-    <!-- Lista de eventos -->
-    <main>
-        <h2 class="section-title">Eventos</h2>
+  <!-- Lista de eventos -->
+  <main>
+    <h2 class="section-title">Eventos</h2>
 
-        <ul class="event-list">
-            <li>
-                <article class="event-card">
-                    <p class="event-name">
-                        Villa JK
-                    </p>
-                    <p class="price">100R$ - 500$</p>
-                    <p class="rating">★★★★☆</p>
-                    <p class="location">Vila Olímpia</p>
-                </article>
-            </li>
-            <li>
-                <a href="detalhes_da_festa_universitaria.html">
-                <article class="event-card">
-                    <p class="event-name">Festa Universitária</p>
-                    <p class="price">100R$ - 300$</p>
-                    <p class="rating">★★★★★</p>
-                    <p class="location">Barra Funda</p>
-                </article>
-                </a>
-            </li>
-            <li>
-                <article class="event-card">
-                    <p class="event-name">
-                        Rock no Centro
-                    </p>
-                    <p class="price">20R$ - 150$</p>
-                    <p class="rating">★★★☆☆</p>
-                    <p class="location">Centro</p>
-                </article>
-            </li>
-        </ul>
-    </main>
-    
-    <!-- Rodapé -->
-    <footer class="site-footer">
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="#"><img src="img/icone_mapa.png" alt="Mapa"></a></li>
-                <li><a href="#"><img src="img/icone_home.png" alt="Home"></a></li>
-                <li><a href="#"><img src="img/icone_chat.png" alt="Chat"></a></li>
-                <li><a href="#"><img src="img/icone_calendario.png" alt="Calendário"></a></li>
-            </ul>
-        </nav>
-    </footer>
+    <ul class="event-list">
+      <li>
+        <article class="event-card">
+          <h3 class="event-name">Villa JK</h3>
+          <p class="price">100R$ - 500$</p>
+          <p class="rating">★★★★☆</p>
+          <p class="location">Vila Olímpia</p>
+        </article>
+      </li>
+      <li>
+        <a href="detalhes_da_festa_universitaria.html">
+          <article class="event-card">
+            <h3 class="event-name">Festa Universitária</h3>
+            <p class="price">100R$ - 300$</p>
+            <p class="rating">★★★★★</p>
+            <p class="location">Barra Funda</p>
+          </article>
+        </a>
+      </li>
+      <li>
+        <article class="event-card">
+          <h3 class="event-name">Rock no Centro</h3>
+          <p class="price">20R$ - 150$</p>
+          <p class="rating">★★★☆☆</p>
+          <p class="location">Centro</p>
+        </article>
+      </li>
+    </ul>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#"><img src="img/icone_mapa.png" alt="Mapa"></a></li>
+        <li><a href="#"><img src="img/icone_home.png" alt="Home"></a></li>
+        <li><a href="#"><img src="img/icone_chat.png" alt="Chat"></a></li>
+        <li><a href="#"><img src="img/icone_calendario.png" alt="Calendário"></a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>

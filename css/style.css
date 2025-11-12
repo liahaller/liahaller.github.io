@@ -570,7 +570,6 @@ h1, h2, h3, h4, h5, h6 {
 .horizontal{
   display:flex;
   justify-content:space-evenly;
-  align-items: center;
  }
 
 
@@ -689,4 +688,31 @@ h1, h2, h3, h4, h5, h6 {
 .avaliado{
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.estrela {
+  display: inline-flex;
+  flex-direction: row-reverse; 
+  justify-content: flex-end;
+  unicode-bidi: bidi-override;
+}
+
+input {
+  display: none;
+}
+
+label {
+  font-size: 2rem;
+  color: #ccc; 
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+input:checked ~ label {
+  color: gold;
+}
+
+label:hover,
+label:hover ~ label {
+  color: gold;
 }

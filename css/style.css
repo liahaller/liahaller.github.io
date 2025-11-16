@@ -622,12 +622,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: var(--max-width); /* mantém o mesmo limite da página */
   box-shadow: 0 2px 8px var(--shadow);
 }
-
-/* aparece quando clicado */
-#filter-panel:target {
+#filter-panel.show{
   display: block;
 }
-
+#filter-panel.hide{
+  display: none;
+}
 /* Cabeçalho */
 .filter-header {
   display: flex;

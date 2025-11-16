@@ -552,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .avaliar{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
   gap: 0.75rem;
   padding: 1rem;
   background: var(--avaliar);
@@ -563,14 +563,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .avaliar:hover{
-  transform: translateY(-0.35rem);
+  transform: translateY(-0.2rem);
   box-shadow: 0 1rem 2rem rgba(11,12,16,0.09);
 }
 
 .horizontal{
   display:flex;
   justify-content:space-evenly;
-  align-items: center;
  }
 
 
@@ -689,4 +688,41 @@ h1, h2, h3, h4, h5, h6 {
 .avaliado{
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.estrela {
+  display: inline-flex;
+  flex-direction: row-reverse; 
+  justify-content: flex-end;
+  unicode-bidi: bidi-override;
+}
+
+.estrela input {
+  display: none;
+}
+
+label {
+  font-size: 2rem;
+  color: #ccc; 
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+input:checked ~ label {
+  color: gold;
+}
+
+label:hover,
+label:hover ~ label {
+  color: gold;
+}
+
+#sim{
+  color: green;
+  font-weight: bold;
+}
+
+#nao{
+  color: red;
+  font-weight: bold;
 }

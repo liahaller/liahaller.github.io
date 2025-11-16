@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">  
+        <script src="/js/funcoes.js"></script>
         <title>Avaliação</title>
     </head>
     <body>
@@ -46,13 +47,15 @@
                 <li>
                     Você recomendaria este evento para um amigo?
                     <ul class="horizontal">
-                        <li class="avaliar">
-                            <input type="radio" id="sim" name="recomendacao" value="sim">
-                            <label for="sim">Sim</label>
+                        <li>
+                            <button class="avaliar" id = 'sim'>
+                                Sim
+                            </button>
                         </li>
-                        <li class="avaliar">
-                            <input type="radio" id="nao" name="recomendacao" value="nao">
-                            <label for="nao">Não</label>
+                        <li>
+                            <button class="avaliar" id = 'nao'>
+                                Não
+                            </button>
                         </li>
                     </ul>
                 </li>

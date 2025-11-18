@@ -24,22 +24,36 @@
 }
 
 * { box-sizing: border-box; }
-html,body { height: 100%; margin: 0; }
+html { height: 100%; margin: 0; }
+
 body{
+  min-height: 100vh; 
+  margin: 0;
   background: var(--bg);
   color: #0b1220;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height: 1.35;
   padding: 1.25rem;
+  padding-bottom: 70px;
   font-size: 1rem;
 }
+
 
 header, main, footer {
   width: 100%;
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
 }
 
 header{

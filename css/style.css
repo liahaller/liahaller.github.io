@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
-.detail-info li strong{ color: var(--purple-2); font-weight:700; margin-right:0.35rem; }
+strong{ color: var(--purple-2); font-weight:700; margin-right:0.35rem; }
 
 .map-box{
   padding: 0.6rem; 
